@@ -1,52 +1,59 @@
+// require dependencies
 const fs = require("fs");
 const path = require("path");
 
-// GET
+// require data array from db.json
+const jsonData = require("../db/db");
+
 module.exports = function(app) {
+
+    // GET - view api data
     app.get("/api/notes", function (req, res) {
-        fs.readFile(path.join(__dirname, "../db/db.json"), "utf8", function(err, data) {
-            if(err) throw err;
-            let notesData = JSON.parse(data);
-            res.json(notesData);
-        });
+        res.sendFile(path.join(__dirname, "../db/db.json"));
     });
 
+    // POST - post new entry to api
     app.post("/api/notes", function(req, res) {
+        
+        // push new entry into jsonData array, render array id's
         let newNote = req.body;
-        fs.readFile(path.join(__dirname, "../db/db.json"), "utf8", function (err, data) {
-            if (err) throw err;
-            let notesData = JSON.parse(data);
-            notesData.push(newNote);
-            newNote.id = notesData.indexOf(newNote) + 1;
+        jsonData.push(newNote);
+        renderDataID(jsonData);
 
-            let jsonData = JSON.stringify(notesData, null, 2);
-            fs.writeFile(path.join(__dirname, "../db/db.json"), jsonData, function(err) {
-                if (err) throw err;
-            });
-
-            res.json(notesData);
+        // write a new file using the updated jsonData array
+        fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(jsonData, null, 2), (err) => {
+            if (err) throw err
         });
+
+        res.json(newNote);
     });
 
+    // DELETE - delete entry from API
     app.delete("/api/notes/:id", function(req, res) {
         let deleteNoteID = req.params.id;
 
-        fs.readFile(path.join(__dirname, "../db/db.json"), "utf8", function (err, data) {
-            if (err) throw err;
-            let notesData = JSON.parse(data);
-            for (var i = 0; i < notesData.length; i++) {
-                if (deleteNoteID == notesData[i].id) {
-                    notesData.splice(i, 1);
-                }
+        // delete entry who's id matches the requested id
+        for (var i = 0; i < jsonData.length; i++) {
+            if (deleteNoteID == jsonData[i].id) {
+                jsonData.splice(i, 1);
             }
+        };
 
-            let jsonData = JSON.stringify(notesData, null, 2);
-            fs.writeFile(path.join(__dirname, "../db/db.json"), jsonData, function (err) {
-                if (err) throw err;
-            });
+        renderDataID(jsonData);
 
-            res.json(notesData);
+        // write new file using the updated jsonData array
+        fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(jsonData, null, 2), (err) => {
+            if (err) throw err
         });
-    })
+
+        res.json(deleteNoteID);
+    });
+};
+
+// renders id property of the objects in the jsonData array
+function renderDataID(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        arr[i].id = i + 1;
+    }
 };
 

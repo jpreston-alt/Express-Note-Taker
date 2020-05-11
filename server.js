@@ -8,7 +8,7 @@ const app = express();
 // set up initial port
 const PORT = process.env.PORT || 3000;
 
-// set Express app up to handle data parsing
+// middleware for data parsing
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 

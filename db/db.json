@@ -1,12 +1,17 @@
 [
   {
-    "title": "hey",
-    "text": "what up",
+    "title": "Spring Cleaning",
+    "text": "- Clean cupboards\n- Purge closet/ goodwill trip",
+    "id": 1
+  },
+  {
+    "title": "Groceries",
+    "text": "- avocadoes\n- tortillas\n-tomatoes\n- salsa",
     "id": 2
   },
   {
-    "title": "sup",
-    "text": "supppp",
+    "title": "To Read",
+    "text": "Beneath a Scarlett Sky",
     "id": 3
   }
 ]
