@@ -11,7 +11,7 @@ module.exports = function(app) {
         });
     });
 
-    app.post("/api/notes", function (req, res) {
+    app.post("/api/notes", function(req, res) {
         let newNote = req.body;
         fs.readFile(path.join(__dirname, "../db/db.json"), "utf8", function (err, data) {
             if (err) throw err;
@@ -26,10 +26,27 @@ module.exports = function(app) {
 
             res.json(notesData);
         });
-        
     });
+
+    app.delete("/api/notes/:id", function(req, res) {
+        let deleteNoteID = req.params.id;
+
+        fs.readFile(path.join(__dirname, "../db/db.json"), "utf8", function (err, data) {
+            if (err) throw err;
+            let notesData = JSON.parse(data);
+            for (var i = 0; i < notesData.length; i++) {
+                if (deleteNoteID == notesData[i].id) {
+                    notesData.splice(i, 1);
+                }
+            }
+
+            let jsonData = JSON.stringify(notesData, null, 2);
+            fs.writeFile(path.join(__dirname, "../db/db.json"), jsonData, function (err) {
+                if (err) throw err;
+            });
+
+            res.json(notesData);
+        });
+    })
 };
 
-
-// POST
-// DELETE
