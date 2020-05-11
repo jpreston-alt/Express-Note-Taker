@@ -1,26 +1,12 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text"
+    "title": "joanna",
+    "text": "preston",
+    "id": 1
   },
   {
-    "title": "hey",
-    "text": "sup"
-  },
-  {
-    "title": "hey",
-    "text": "sup"
-  },
-  {
-    "title": "yo",
-    "text": "yoyoyo"
-  },
-  {
-    "title": "new note",
-    "text": "finish homework"
-  },
-  {
-    "title": "bug",
-    "text": "is awesome"
+    "title": "Bug",
+    "text": "Preston",
+    "id": 2
   }
 ]

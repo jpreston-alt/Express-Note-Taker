@@ -17,6 +17,7 @@ module.exports = function(app) {
             if (err) throw err;
             let notesData = JSON.parse(data);
             notesData.push(newNote);
+            newNote.id = notesData.indexOf(newNote) + 1;
 
             let jsonData = JSON.stringify(notesData, null, 2);
             fs.writeFile(path.join(__dirname, "../db/db.json"), jsonData, function(err) {
