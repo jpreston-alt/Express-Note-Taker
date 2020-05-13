@@ -11,6 +11,7 @@ Organize your thoughts with Notepad, a note taking application built with Expres
 * [Questions](#questions)
 
 ## Usage
+* Navigate to the [deployed Heroku App](https://jp-express-notepad.herokuapp.com/).
 * Click the get started button.
 * Add a note title and body in the provided text box.
 * Save your note by clicking the save icon.
