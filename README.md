@@ -18,6 +18,7 @@ Organize your thoughts with Notepad, a note taking application built with Expres
 * View a list of your saved notes on the left hand side.
 * Click on any note in the list to view your full note.
 * Create a new note at any time by clicking the pencil button.
+* Delete any note by pressing it's "X" icon.
 
 ## Technologies
 * JavaScript
