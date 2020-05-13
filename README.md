@@ -23,9 +23,11 @@
 View deployed Heroku app [here](https://jp-express-notepad.herokuapp.com/).<br>
 <!-- View a video demonstrating the application [here](). -->
 
-![]()
+
+![homepage](./public/assets/images/homepage.png)
 
 ## Credits
+* Background photo by [Tirachard Kumtanom](https://www.pexels.com/@tirachard-kumtanom-112571) from Pexels
 
 ## Questions
 ​
