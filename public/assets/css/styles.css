@@ -7,10 +7,10 @@ html, body {
 }
 
 h1 {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 400 !important;
-    font-size: 72px !important;
-    color: #2c3e50;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400 !important;
+  font-size: 72px !important;
+  color: #2c3e50;
 }
 
 .navbar-brand {
@@ -106,9 +106,9 @@ li:hover {
 }
 
 .note-title {
-  height: 50px;
+  height: 40px;
   margin-top: 13px;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #2c3e50;
 }
 
