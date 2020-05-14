@@ -5,7 +5,8 @@ Having trouble keeping track of all the tasks you were supposed to complete? How
 
 This application taught me about building a back-end server using Express. I learned about connecting that server to a front-end so that it is able to recieve get, post, and delete requests, and respond accordingly. I also learned about storing data on a server by generating JSON files based on user input, and about using that data to build server-side API's. The full-stack journey is nearly complete!
 
-<img src="./public/assets/images/homepage.png" alt="homepage-pic" width="500"/>
+<img src="./public/assets/images/homepage.png" alt="homepage-pic" height="250"/>
+<img src="./public/assets/images/notes_page.png" alt="notes-page-pic" height="250"/>
 
 ## Table of Contents
 * [Technologies](#technologies)
