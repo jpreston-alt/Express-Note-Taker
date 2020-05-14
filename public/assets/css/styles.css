@@ -100,13 +100,13 @@ li:hover {
 .note-textarea {
   resize: none;
   height: calc(100% - 63px);
-  padding-top: 15px;
+  /* padding-top: 15px; */
   color: #2c3e50;
   font-weight: 200;
 }
 
 .note-title {
-  height: 40px;
+  /* height: 40px; */
   margin-top: 13px;
   font-size: 2rem;
   color: #2c3e50;
