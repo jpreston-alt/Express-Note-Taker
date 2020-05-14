@@ -100,13 +100,11 @@ li:hover {
 .note-textarea {
   resize: none;
   height: calc(100% - 63px);
-  /* padding-top: 15px; */
   color: #2c3e50;
   font-weight: 200;
 }
 
 .note-title {
-  /* height: 40px; */
   margin-top: 13px;
   font-size: 2rem;
   color: #2c3e50;
@@ -117,7 +115,6 @@ li:hover {
 }
 
 .list-container .card {
-  /* height: calc(100vh - 70px); */
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;

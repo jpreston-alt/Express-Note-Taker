@@ -1,17 +1,12 @@
 [
   {
-    "title": "note one",
-    "text": "new note about something",
+    "title": "Mom's Birthday",
+    "text": "9/2/1960",
     "id": 1
   },
   {
-    "title": "note two",
-    "text": "new note about something different",
+    "title": "Groceries",
+    "text": "Coffee\nmore coffee",
     "id": 2
-  },
-  {
-    "title": "note three",
-    "text": "yet another note",
-    "id": 3
   }
 ]

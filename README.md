@@ -1,14 +1,27 @@
 # [Notepad (Express.js)](https://jp-express-notepad.herokuapp.com/) 
 
 ## Description
-Organize your thoughts with Notepad, a note taking application built with Express.js. Notepad helps the user keep track of everything they need to remember, by allowing them save, view, and delete notes.
+Having trouble keeping track of all the tasks you were supposed to complete? How about remembering your grocery list? Then look no further than Notepad! Notepad is a full-stack note-taking application, built with Express.js, that will store your thoughts and to-do's, so that your brain doesn't have to. Users are able to save, view, and delete notes at any time. Your brain space is precious, so give your mind a break, and organize your thoughts with Notepad!
+
+This application taught me about building a back-end server using Express. I learned about connecting that server to a front-end so that it is able to recieve get, post, and delete requests, and respond accordingly. I also learned about storing data on a server by generating JSON files based on user input, and about using that data to build server-side API's. The full-stack journey is nearly complete!
+
+<img src="./public/assets/images/homepage.png" alt="homepage-pic" width="500"/>
 
 ## Table of Contents
-* [Usage](#usage)
 * [Technologies](#technologies)
+* [Usage](#usage)
 * [Finished Product](#finished-product)
 * [Credits](#Credits)
 * [Questions](#questions)
+
+## Technologies
+* JavaScript
+* Node.js
+* Express.js
+* Heroku
+* HTML
+* CSS
+* Bootstrap
 
 ## Usage
 * Navigate to the [deployed Heroku App](https://jp-express-notepad.herokuapp.com/).
@@ -20,15 +33,10 @@ Organize your thoughts with Notepad, a note taking application built with Expres
 * Create a new note at any time by clicking the pencil button.
 * Delete any note by pressing it's "X" icon.
 
-## Technologies
-* JavaScript
-* Node.js
-* Express.js
-
 ## Finished Product
-View deployed Heroku app [here](https://jp-express-notepad.herokuapp.com/).<br>
+View deployed Heroku app [here](https://jp-express-notepad.herokuapp.com/).
 
-![homepage](./public/assets/images/homepage.png)
+![](./public/assets/images/notepad.gif)
 
 ## Credits
 * Background photo by [Tirachard Kumtanom](https://www.pexels.com/@tirachard-kumtanom-112571) from Pexels
