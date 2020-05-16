@@ -1,9 +1,9 @@
 # [Notepad (Express.js)](https://jp-express-notepad.herokuapp.com/) 
 
 ## Description
-Having trouble keeping track of all the tasks you were supposed to complete? How about remembering your grocery list? Then look no further than Notepad! Notepad is a full-stack note-taking application, built with Express.js, that will store your thoughts and to-do's, so that your brain doesn't have to. Users are able to save, view, and delete notes at any time. Your brain space is precious, so give your mind a break, and organize your thoughts with Notepad!
+Having trouble keeping track of all the tasks you were supposed to complete? How about remembering your grocery list? Then look no further than Notepad! Notepad is a full-stack note-taking application, built with Express.js, that will store your thoughts and to-do's, so that your brain doesn't have to. Users are able to save, view, and delete notes at any time by accessing and writing data to a JSON file. Your brain space is precious, so give your mind a break, and organize your thoughts with Notepad!
 
-This application taught me about building a back-end server using Express. I learned about connecting that server to a front-end so that it is able to recieve get, post, and delete requests, and respond accordingly. I also learned about storing data on a server by generating JSON files based on user input, and about using that data to build server-side API's. The full-stack journey is nearly complete!
+This application taught me about building a back-end server using Express. I learned about connecting that server to a front-end so that it is able to recieve get, post, and delete requests, and respond accordingly. I also learned about storing data that persists on a server by generating JSON files based on user input. And about how to use that data to build server-side API's. The full-stack journey is nearly complete!
 
 <img src="./public/assets/images/homepage.png" alt="homepage-pic" width="600"/>
 <img src="./public/assets/images/notes_page.png" alt="notes-page-pic" width="600"/>
